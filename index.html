@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout web Menggunakan Iframe</title>
+</head>
+<frameset rows="100, *,50" frameborder="1" border="1">
+    <!-- HEADER -->
+    <frame src="header.html" name="headerframe"></frame>
+
+    <!-- sidebar & main content -->
+    <frameset cols="200, *" frameborder="1" border="1">
+        <frame src="sidebar.html" name="meneframe"></frame>
+        <frame src="main.html" name="showframe"></frame>
+    </frameset>
+
+    <!-- footer -->
+        <frame src="footer.html"></frame>
+</frameset>
+</html>
